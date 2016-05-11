@@ -1,11 +1,109 @@
 <html>
 <head>
-  <title>My Page</title>
+  <title>HangMan</title>
 </head>
 <link rel="stylesheet" href="style.css">
-<body>
-  <h1>this is a header</h1>
+<body class="game-page">
+  <h1 class="game-header">Denny's Hangman <br> Game!</h1>
 
+<div id="timer"></div>
+
+<div id="header"></div>
+
+  <div id="letters"></div>
+
+  <br>
+
+  <img src="img/western-background.jpg" alt="" class="hangman-photo" id="photo">
+
+  <br>
+
+  <div>
+     <h3 id="guesses">
+     </h3>
+     <h2 id="theDashes">
+     </h2>
+     <h3 id="theWord" hidden="true">
+     </h3>
+     <h3 id="theStatus">
+     </h3>
+  </div>
+
+  <input id="start-button" type="submit" value="Start Here!" id="play" class="starter"  onclick="start()">
+
+<br>
+
+  <input id= "restart-button" type="submit" value="restart" id="play" class="restart" onclick="start()">
+
+  <div id="letters"></div>
+
+  <br>
+
+<div id="keyboard">
+              <td><input type="button" value="A" id="A" onclick="isLetterInWord( document.getElementById('theWord').innerHTML, 'A')">
+              </td>
+              <td><input type="button" value="B" id="B" onclick="isLetterInWord( document.getElementById('theWord').innerHTML, 'B')">
+              </td>
+              <td><input type="button" value="C" id="C" onclick="isLetterInWord( document.getElementById('theWord').innerHTML, 'C')">
+              </td>
+              <td><input type="button" value="D" id="D" onclick="isLetterInWord( document.getElementById('theWord').innerHTML, 'D')">
+              </td>
+              <td><input type="button" value="E" id="E" onclick="isLetterInWord( document.getElementById('theWord').innerHTML, 'E')">
+              </td>
+              <td><input type="button" value="F" id="F" onclick="isLetterInWord( document.getElementById('theWord').innerHTML, 'F')">
+              </td>
+              <td><input type="button" value="G" id="G" onclick="isLetterInWord( document.getElementById('theWord').innerHTML, 'G')">
+              </td>
+           </tr>
+           <tr>
+              <td><input type="button" value="H" id="H" onclick="isLetterInWord( document.getElementById('theWord').innerHTML, 'H')">
+              </td>
+              <td><input type="button" value="I" id="I" onclick="isLetterInWord( document.getElementById('theWord').innerHTML, 'I')">
+              </td>
+              <td><input type="button" value="J" id="J" onclick="isLetterInWord( document.getElementById('theWord').innerHTML, 'J')">
+              </td>
+              <td><input type="button" value="K" id="K" onclick="isLetterInWord( document.getElementById('theWord').innerHTML, 'K')">
+              </td>
+              <td><input type="button" value="L" id="L" onclick="isLetterInWord( document.getElementById('theWord').innerHTML, 'L')">
+              </td>
+              <td><input type="button" value="M" id="M" onclick="isLetterInWord( document.getElementById('theWord').innerHTML, 'M')">
+              </td>
+              <td><input type="button" value="N" id="N" onclick="isLetterInWord( document.getElementById('theWord').innerHTML, 'N')">
+              </td>
+           </tr>
+
+<br>
+
+           <tr>
+              <td><input type="button" value="O" id="O" onclick="isLetterInWord( document.getElementById('theWord').innerHTML, 'O')">
+              </td>
+              <td><input type="button" value="P" id="P" onclick="isLetterInWord( document.getElementById('theWord').innerHTML, 'P')">
+              </td>
+              <td><input type="button" value="Q" id="Q" onclick="isLetterInWord( document.getElementById('theWord').innerHTML, 'Q')">
+              </td>
+              <td><input type="button" value="R" id="R" onclick="isLetterInWord( document.getElementById('theWord').innerHTML, 'R')">
+              </td>
+              <td><input type="button" value="S" id="S" onclick="isLetterInWord( document.getElementById('theWord').innerHTML, 'S')">
+              </td>
+              <td><input type="button" value="T" id="T" onclick="isLetterInWord( document.getElementById('theWord').innerHTML, 'T')">
+              </td>
+              <td><input type="button" value="U" id="U" onclick="isLetterInWord( document.getElementById('theWord').innerHTML, 'U')">
+              </td>
+           </tr>
+           <tr>
+              <td><input type="button" value="V" id="V" onclick="isLetterInWord( document.getElementById('theWord').innerHTML, 'V')">
+              </td>
+              <td><input type="button" value="W" id="W" onclick="isLetterInWord( document.getElementById('theWord').innerHTML, 'W')">
+              </td>
+              <td><input type="button" value="X" id="X" onclick="isLetterInWord( document.getElementById('theWord').innerHTML, 'X')">
+              </td>
+              <td><input type="button" value="Y" id="Y" onclick="isLetterInWord( document.getElementById('theWord').innerHTML, 'Y')">
+              </td>
+              <td><input type="button" value="Z" id="Z" onclick="isLetterInWord( document.getElementById('theWord').innerHTML, 'Z')">
+              </td>
+              </tr>
+</div>
   <script src="script.js"></script>
+
 </body>
 </html>
